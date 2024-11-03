@@ -14,7 +14,7 @@ import { getAllPosts, sortMDByDate } from '@/utils'
 
 const name = 'Aleksandre Nozadze'
 
-const languages = ['Go', 'JavaScript', 'HTML & CSS', 'C++', 'SQL', 'Java']
+const languages = ['Go', 'JavaScript', 'TypeScript', 'HTML & CSS', 'C++', 'SQL', 'Java', 'Lua']
 const frontend = ['React.js', 'Astro.js', 'Bootstrap', 'Tailwindcss']
 const backend = ['Gin', 'Express.js']
 const apis = ['Spotify Web API', 'Youtube Data API']
@@ -98,11 +98,14 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 		</section>
 
 		<Section title='About'>
-			<p class='text-muted-foreground'>
-				Hey, I'm {name}, A computer science student based in Tbilisi, Georgia. I am passionate about
-				coding and creating innovative solutions that make an impact. Currently pursuing my degree
-				at Ilia State University. I have a solid foundation in computer science and a keen interest
-				in various programming languages and frameworks.
+			<p class='text-lg text-muted-foreground'>
+				Hello! I'm {name}, a Computer Science student based in Tbilisi, Georgia, with a strong
+				passion for coding and developing impactful tech solutions. Currently, I'm pursuing my
+				degree at Ilia State University, where I’ve built a solid foundation in computer science
+				principles. I’m highly proficient in languages like JavaScript, Go, and C++, and have
+				hands-on experience in frameworks like React and TypeScript. My goal is to create efficient,
+				scalable applications and to continuously expand my expertise in web, mobile and desktop app
+				development.
 			</p>
 		</Section>
 
@@ -296,6 +299,15 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 		</Section>
 
 		<Section title='Certifications'>
+			<Card
+				as='div'
+				heading='Node.js Backend Developer'
+				subheading=''
+				date='Present'
+				imagePath=''
+				altText='Node.js'
+				imageClass='h-11 w-auto md:-left-16'
+			/>
 			<Card
 				as='div'
 				heading='IT Service & Helpdesk'
